@@ -14,6 +14,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/mission",
+        element: <Mission />
+      },
+      {
         path:"/bounty",
         element: <Bounty/>
       },
