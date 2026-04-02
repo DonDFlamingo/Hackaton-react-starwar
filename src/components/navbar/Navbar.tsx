@@ -1,6 +1,5 @@
 import {Link} from 'react-router'
-import Logo from "../../assets/ChatGPT_Image_2_avr._2026__14_09_52-removebg-preview.png"
-import Login from "../../assets/computer-icons-google-account-icon-design-login-png-favpng-jFjxPac6saRuDE3LiyqsYTEZM-removebg-preview.png"
+import Login from "../../assets/74-746008_icon-for-user-user-icon-png-white-transparent-removebg-preview.png"
 import'./Navbar.css'
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet"></link>
@@ -8,11 +7,17 @@ import'./Navbar.css'
 function Navbar(){
     return(
           <div className="navbar">
-            <img src={Logo} alt="Logo" className='img-nav'/>
+            <Link to="/" className='logo-nav'>
+            <h1 className='logo-nav'>GALACTIC  CONTRACT</h1>
+            </Link>
             <nav>
                 <ul className='ul-nav'>
+                    <Link to="/mission" className='nav-link'>
                     <li className='nav-link'>MISSION</li>
+                    </Link>
+                    <Link to="/profil">
                    <img src={Login} alt="" className="nav-login"/>
+                   </Link>
                 </ul>
             </nav>
           </div>
