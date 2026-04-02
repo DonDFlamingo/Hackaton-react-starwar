@@ -8,14 +8,14 @@ function Navbar(){
     return(
           <div className="navbar">
             <Link to="/" className='logo-nav'>
-            <h1 className='logo-nav'>GALATIC  CONTRACT</h1>
+            <h1 className='logo-nav'>GALACTIC  CONTRACT</h1>
             </Link>
             <nav>
                 <ul className='ul-nav'>
                     <Link to="/mission" className='nav-link'>
                     <li className='nav-link'>MISSION</li>
                     </Link>
-                    <Link to="/login">
+                    <Link to="/profil">
                    <img src={Login} alt="" className="nav-login"/>
                    </Link>
                 </ul>
