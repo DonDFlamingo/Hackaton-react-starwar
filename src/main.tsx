@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router";
+import Home from './pages/Home/Home.tsx';
+import Bounty from './pages/Bounty/Bounty.tsx'
 import './index.css'
 import App from './App.tsx'
 
@@ -12,8 +14,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/mission",
-        element: <Mission />,
+        path:"/bounty",
+        element: <Bounty/>
       },
       
     ],

@@ -2,26 +2,31 @@
     display:flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.845) ;
+    background-color: rgba(0, 0, 0, 0.822) ;
     align-items: center;
     font-family: 'Space Grotesk', sans-serif;
 }
-.img-nav{
-    width: 80px;
+.logo-nav{
+    word-spacing: 5px;
+    font-size: 23px;
+    text-decoration: none;
+    color: #00ccff;
+    text-shadow:0 0 5px #0077cc;
 }
 .ul-nav{
     display:flex;
     list-style: none;
     align-items: center;
     gap: 20px;
-    color:rgba(255, 255, 255, 0.799) ;
 }
 .nav-link{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.799) ;
 }
 
 .nav-login{
-    width: 45px;
+    width: 40px;
     font-weight: 700;
 }
