@@ -1,12 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    background-color: #001B2B;
-    color: #2EB5E0;
-}
-
 .DescriptifDuProfil {
     display: flex;
     flex-direction: column;
