@@ -45,3 +45,9 @@
           drop-shadow(0 0 5px #00ccff)
           drop-shadow(0 0 5px #0099ff);
 }
+.logo-nav:hover{
+    text-shadow:0 0 5px #0077cc,
+    0 0 10px #00ccff,
+    0 0 20px #0099ff,
+    0 0 40px #0077cc;
+}
