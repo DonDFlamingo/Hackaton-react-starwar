@@ -21,10 +21,6 @@ const router = createBrowserRouter([
         path: "/bounty",
         element: <Bounty />,
       },
-      {
-        path: "/bounty",
-        element: <Bounty />,
-      },
     ],
   },
 ]);
