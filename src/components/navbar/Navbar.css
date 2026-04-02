@@ -1,13 +1,13 @@
 .navbar{
     display:flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     background-color: rgba(0, 0, 0, 0.822) ;
     align-items: center;
     font-family: 'Space Grotesk', sans-serif;
 }
 .logo-nav{
-    word-spacing: 5px;
+    word-spacing: 2px;
     font-size: 23px;
     text-decoration: none;
     color: #00ccff;
@@ -15,6 +15,7 @@
 }
 .ul-nav{
     display:flex;
+    padding: 0px 30px 0px 0px;
     list-style: none;
     align-items: center;
     gap: 20px;
@@ -27,7 +28,7 @@
 }
 
 .nav-login{
-    width: 40px;
+    width: 30px;
     
 }
 

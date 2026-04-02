@@ -1,7 +1,5 @@
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
-
-import Home from "./pages/Home/Home.tsx";
 import Bounty from "./pages/Bounty/Bounty.tsx";
 import Mission from "./pages/Mission/Mission.tsx";
 import Profil from "./pages/Profil/Profil.tsx";
