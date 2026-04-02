@@ -1,0 +1,38 @@
+:root {
+	--primary: #2eb5e0;
+	--secondary: #e63946;
+	--tertiary: #4ade80;
+	--neutral: #0a0c10;
+	--background: #001b2b;
+	--PrimaryFont: "Manrope", serif;
+	--secondaryFont: "SpaceGotesk", serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+}
+.card-section {
+	display: flex;
+	justify-content: center;
+	.card-container {
+		display: flex;
+		padding: 32px;
+		margin: 32px;
+		border: 1px solid #001b2b;
+		width: max-content;
+		border-radius: 20px;
+		.container-img-info {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			.card-div-img {
+				img {
+					width: 200px;
+				}
+			}
+		}
+	}
+}

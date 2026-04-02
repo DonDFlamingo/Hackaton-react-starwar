@@ -7,7 +7,7 @@ import Soleil from "../../assets/logo-sun.png";
 import Lune from "../../assets/logo-moon.png";
 
 interface Character {
-    affiliations: string[];
+	affiliations: string[];
 }
 
 function Home() {
