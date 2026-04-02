@@ -1,8 +1,15 @@
-import "./App.css";
-import Card from "./components/Card";
+import { Outlet } from "react-router";
+import Navbar from "./components/navbar/Navbar";
 
-function App() {
-	return <Card />;
-}
+import "./App.css";
+
+const App = () => {
+	return (
+		<>
+			<Navbar />
+			<Outlet />
+		</>
+	);
+};
 
 export default App;
