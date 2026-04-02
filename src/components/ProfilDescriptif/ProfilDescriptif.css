@@ -17,20 +17,25 @@ body {
 
 .Compétance {
      display: grid;
-    grid-template-columns: repeat(3, 40vh);
+    grid-template-columns: repeat(3, 50vh);
     grid-template-rows: repeat(3, 1fr);
     gap: 8px;
     background-color: #0A0C10;
+    height: 50vh;
     border-radius: 10px;
 }
 
 .div1 {
     grid-column: span 3 / span 3;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;text-decoration: underline;
 }
 
 .div2 {
     grid-row-start: 2;
+    border-radius: 20px;
+    
 }
 
 .div3 {
@@ -58,9 +63,11 @@ body {
 }
 
 .titreCompétance {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 550;
     text-align: center;
+    text-decoration: underline;
+    color: #E63946;
 }
 
 .paraCompétance {
