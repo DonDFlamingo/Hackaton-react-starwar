@@ -1,31 +1,46 @@
 import "./Card.css";
 import { useLocation } from "react-router";
 
+interface Character {
+	name: string;
+	affiliations: string[];
+	image: string;
+	id: number;
+	height: number;
+	mass: number;
+	eyeColor?: string;
+	hairColor?: string;
+	skinColor?: string;
+}
+
 function Card() {
 	const location = useLocation();
-	const userId = (location.state as { userId?: number })?.userId || 0;
+
+	// récupération du tableau envoyé par navigate
+	const characters = (location.state as Character[]) || [];
 
 	return (
 		<section className="card-section">
-			<div className="card-container">
-				<div className="container-img-info">
-					<div className="card-div-img">
-						<img
-							src={`https://picsum.photos/200?random=`}
-							alt={`User ${userId}`}
-						/>
+			{characters.map((character) => (
+				<div className="card-container" key={character.id}>
+					<div className="container-img-info">
+						<div className="card-div-img">
+							<img src={`${character.image}`} alt={character.name} />
+						</div>
+
+						<div className="card-div-info">
+							<p>{character.name}</p>
+							<p>{character.affiliations?.join(", ")}</p>
+							<p>{character.height}</p>
+							<p></p>
+						</div>
 					</div>
-					<div className="card-div-info" id={`user-${userId}`}>
-						<p>User ID: {userId}</p>
-						<p>Name: {userId === 1 ? "Luke Skywalker" : "Unknown"}</p>
-						<p>Role: Jedi</p>
-						<p>Status: Active</p>
+
+					<div className="card-div-description">
+						<p></p>
 					</div>
 				</div>
-				<div className="card-div-description">
-					<p>This is a card description for user {userId}.</p>
-				</div>
-			</div>
+			))}
 		</section>
 	);
 }
