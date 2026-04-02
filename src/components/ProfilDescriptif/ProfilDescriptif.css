@@ -1,72 +1,72 @@
 .DescriptifDuProfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8em;
 }
 
 .Compétance {
-     display: grid;
-    grid-template-columns: repeat(3, 50vh);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 8px;
-    background-color: #0A0C10;
-    height: 50vh;
-    border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 50vh);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 8px;
+	background-color: #0a0c10;
+	height: 50vh;
+	border-radius: 10px;
 }
 
 .div1 {
-    grid-column: span 3 / span 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;text-decoration: underline;
+	grid-column: span 3 / span 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: underline;
 }
 
 .div2 {
-    grid-row-start: 2;
-    border-radius: 20px;
-    
+	grid-row-start: 2;
+	border-radius: 20px;
 }
 
 .div3 {
-    grid-column-start: 1;
-    grid-row-start: 3;
+	grid-column-start: 1;
+	grid-row-start: 3;
 }
 
 .div4 {
-    grid-column-start: 2;
-    grid-row-start: 2;
+	grid-column-start: 2;
+	grid-row-start: 2;
 }
 
 .div5 {
-    grid-column-start: 2;
-    grid-row-start: 3;
+	grid-column-start: 2;
+	grid-row-start: 3;
 }
 
 .div6 {
-    grid-column-start: 3;
-    grid-row-start: 2;
+	grid-column-start: 3;
+	grid-row-start: 2;
 }
 
 .div7 {
-    grid-row-start: 3;
+	grid-row-start: 3;
 }
 
 .titreCompétance {
-    font-size: 30px;
-    font-weight: 550;
-    text-align: center;
-    text-decoration: underline;
-    color: #E63946;
+	font-size: 30px;
+	font-weight: 550;
+	text-align: center;
+	text-decoration: underline;
+	color: #e63946;
 }
 
 .paraCompétance {
-    font-size: 20px;
-    text-align: center;
+	font-size: 20px;
+	text-align: center;
 }
 
 .PhotoProfilPourMercenaire {
-    width: 30vh;
-    border-radius: 100%;
+	width: 30vh;
+	border-radius: 100%;
 }
