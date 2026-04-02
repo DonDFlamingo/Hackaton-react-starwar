@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #001B2B;
+    color: #2EB5E0;
+}
+
+.DescriptifDuProfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8em;
+}
+
+.Compétance {
+     display: grid;
+    grid-template-columns: repeat(3, 50vh);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    background-color: #0A0C10;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.div1 {
+    grid-column: span 3 / span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;text-decoration: underline;
+}
+
+.div2 {
+    grid-row-start: 2;
+    border-radius: 20px;
+    
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div7 {
+    grid-row-start: 3;
+}
+
+.titreCompétance {
+    font-size: 30px;
+    font-weight: 550;
+    text-align: center;
+    text-decoration: underline;
+    color: #E63946;
+}
+
+.paraCompétance {
+    font-size: 20px;
+    text-align: center;
+}
+
+.PhotoProfilPourMercenaire {
+    width: 30vh;
+    border-radius: 100%;
+}
