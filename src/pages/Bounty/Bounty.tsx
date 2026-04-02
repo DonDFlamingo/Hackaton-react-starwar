@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { useLocation } from "react-router";
 
-// import Card from "../../components/Card";
 import Carousel from "../../components/Carousel/Carousel";
-
 import "./Bounty.css";
 
 interface Character {
   name: string;
   affiliations: string[];
+  image?: string;
+  description?: string;
+  height: number;
+  mass: number;
 }
 
 interface LocationState {
@@ -22,7 +24,7 @@ const Bounty = () => {
   const isVillain = state?.side === "Sith";
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [decisions, setDecisions] = useState<
+  const [_decisions, setDecisions] = useState<
     { character: Character; accepted: boolean }[]
   >([]);
 
@@ -40,7 +42,7 @@ const Bounty = () => {
         <div className="corner top-right" />
         <div className="corner bottom-left" />
         <div className="corner bottom-right" />
-        <h1>Je suis dans la page Bounty Hunters</h1>
+        <h1>Welcome dear hunter, choose your next Bounties</h1>
         <Carousel
           cards={characters}
           onDecision={handleDecision}

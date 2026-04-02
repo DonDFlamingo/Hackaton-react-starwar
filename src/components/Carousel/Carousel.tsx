@@ -1,8 +1,13 @@
 import "./Carousel.css";
+import Card from "../../components/Card";
 
 interface Character {
   name: string;
   affiliations: string[];
+  image?: string;
+  description?: string;
+  height: number;
+  mass: number;
 }
 
 interface CarouselProps {
@@ -25,7 +30,9 @@ const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
   return (
     <div className="carousel">
       <div className="carousel-card-wrapper">
-        <div className="carousel-card">{currentCard.name}</div>
+        <div className="carousel-card">
+          <Card character={currentCard} />
+        </div>
       </div>
       <div className="carousel-actions">
         <div className="btn-wrapper">
