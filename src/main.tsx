@@ -1,11 +1,9 @@
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
-
+import Home from "./pages/Home/Home.tsx";
+import Bounty from "./pages/Bounty/Bounty.tsx";
 import "./index.css";
 import App from "./App.tsx";
-import Home from "./pages/Home/Home.tsx";
-import Mission from "./pages/Mission/Mission.tsx";
-import Bounty from "./pages/Bounty/Bounty.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/mission",
         element: <Mission />,
+      },
+      {
+        path: "/bounty",
+        element: <Bounty />,
       },
       {
         path: "/bounty",
