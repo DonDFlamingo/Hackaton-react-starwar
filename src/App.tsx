@@ -1,11 +1,12 @@
-import './App.css'
+import "./App.css";
+import Mission from "./pages/Mission/Mission";
 
 function App() {
-  return (
-    <>
-     
-    </>
-  )
+	return (
+		<>
+			<Mission />
+		</>
+	);
 }
 
-export default App
+export default App;
