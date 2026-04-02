@@ -6,6 +6,7 @@ import Mission from "./pages/Mission/Mission.tsx";
 import Profil from "./pages/Profil/Profil.tsx";
 import './index.css'
 import App from './App.tsx'
+import Home from './pages/Home/Home.tsx';
 
 const router = createBrowserRouter([
   {
