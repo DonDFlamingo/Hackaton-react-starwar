@@ -1,46 +1,53 @@
-import "./Card.css";
+import { useState } from "react";
 import { useLocation } from "react-router";
+import "./Card.css";
 
 interface Character {
 	name: string;
 	affiliations: string[];
-	image: string;
-	id: number;
+	image?: string;
+	description?: string;
 	height: number;
 	mass: number;
-	eyeColor?: string;
-	hairColor?: string;
-	skinColor?: string;
 }
 
 function Card() {
 	const location = useLocation();
-
-	// récupération du tableau envoyé par navigate
 	const characters = (location.state as Character[]) || [];
 
+	// choisir UNE fois un personnage aléatoire
+	const [character] = useState(() => {
+		if (!characters.length) return null;
+		const randomIndex = Math.floor(Math.random() * characters.length);
+		return characters[randomIndex];
+	});
+
+	if (!character) {
+		return <p>No character found.</p>;
+	}
+	const affiliationClass = character.affiliations.includes("Sith")
+		? "sith"
+		: character.affiliations.includes("Jedi Order")
+			? "jedi"
+			: "neutral";
 	return (
 		<section className="card-section">
-			{characters.map((character) => (
-				<div className="card-container" key={character.id}>
-					<div className="container-img-info">
-						<div className="card-div-img">
-							<img src={`${character.image}`} alt={character.name} />
-						</div>
-
-						<div className="card-div-info">
-							<p>{character.name}</p>
-							<p>{character.affiliations?.join(", ")}</p>
-							<p>{character.height}</p>
-							<p></p>
-						</div>
+			<div className={`card-container ${affiliationClass}`}>
+				<div className="container-img-info">
+					<div className="card-div-img ">
+						<img src={character.image} alt={character.name} />
 					</div>
 
-					<div className="card-div-description">
-						<p></p>
+					<div className="card-div-info">
+						<h2>{character.name}</h2>
+						<p>Clan : {affiliationClass}</p>
+						<p>Height : {character.height}</p>
+						<p>Mass : {character.mass}</p>
 					</div>
 				</div>
-			))}
+
+				<div className="card-div-description"></div>
+			</div>
 		</section>
 	);
 }
