@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "./index.css";
 import App from "./App.tsx";
 import Home from "./pages/Home/Home.tsx";
-// import Mission from "./pages/Mission/Mission.tsx";
+import Mission from "./pages/Mission/Mission.tsx";
 import Bounty from "./pages/Bounty/Bounty.tsx";
 
 const router = createBrowserRouter([
