@@ -1,11 +1,13 @@
-import './App.css'
+import Bounty from "./pages/Bounty/Bounty";
 
-function App() {
+import "./App.css";
+
+const App = () => {
   return (
-    <>
-     
-    </>
-  )
-}
+    <div>
+      <Bounty />
+    </div>
+  );
+};
 
-export default App
+export default App;
