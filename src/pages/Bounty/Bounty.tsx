@@ -11,7 +11,6 @@ interface Character {
   affiliations: string[];
 }
 
-//adriiiiiiiii : navigate("/bounty", { state: { characters: results, side: affiliationName } })
 interface LocationState {
   characters: Character[];
   side: string;
@@ -19,22 +18,13 @@ interface LocationState {
 
 const Bounty = () => {
   const { state } = useLocation() as { state: LocationState };
-  // const characters = state?.characters ?? []; en attente du push d'adri
-  const characters = state?.characters ?? [
-    { name: "Luke Skywalker", affiliations: ["Jedi Order"] },
-    { name: "Darth Vader", affiliations: ["Sith"] },
-    { name: "Han Solo", affiliations: ["Alliance to Restore the Republic"] },
-  ];
-  // const isVillain = state?.side === "Sith";  //push adri
+  const characters = state?.characters ?? [];
+  const isVillain = state?.side === "Sith";
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [_decisions, setDecisions] = useState<
-    //_decisions === on a prévu de les envoyer à une autre page plus tard via le router
+  const [decisions, setDecisions] = useState<
     { character: Character; accepted: boolean }[]
   >([]);
-
-  const currentCharacter = characters[currentIndex];
-  const isVillain = currentCharacter?.affiliations.includes("Sith") ?? false; // force dark-side en attendant le push
 
   const handleDecision = (character: Character, accepted: boolean) => {
     setDecisions((prev) => [...prev, { character, accepted }]);
