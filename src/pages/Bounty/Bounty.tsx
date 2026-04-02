@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router";
 
+// import Card from "../../components/Card";
 import Carousel from "../../components/Carousel/Carousel";
 
 import "./Bounty.css";
