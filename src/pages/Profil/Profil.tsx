@@ -1,26 +1,13 @@
 import ProfilDescriptif from "../../components/ProfilDescriptif/ProfilDescriptif";
 import ProfilMissionStats from "../../components/ProfilMissionStats/ProfilMissionStats";
-
+import "./Profil.css";
 function Profil() {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-	return <>
-	<ProfilDescriptif />
-	<ProfilMissionStats />
-	</>;
-=======
->>>>>>> dev
 	return (
-		<>
+		<main>
 			<ProfilDescriptif />
 			<ProfilMissionStats />
-		</>
+		</main>
 	);
-<<<<<<< HEAD
-=======
->>>>>>> 608585a43ad2a52a0841d672c4e7345e6333822d
->>>>>>> dev
 }
 
 export default Profil;

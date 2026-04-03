@@ -27,6 +27,7 @@ function ProfilMissionStats() {
 			<div className="statsWrapper">
 				<div className="missionStats">
 					<h2>Mission Statistics</h2>
+					<hr></hr>
 					<div className="missionDiv">
 						<h3>Missions</h3>
 						<p>{stats.total}</p>
@@ -35,10 +36,12 @@ function ProfilMissionStats() {
 						<h3>Successes</h3>
 						<p>{stats.success}</p>
 					</div>
+
 					<div className="missionDiv">
 						<h3>Failures</h3>
 						<p>{stats.failure}</p>
 					</div>
+
 					<div className="missionDiv">
 						<h3>Rate</h3>
 						<p>{stats.successRate}</p>
@@ -47,12 +50,13 @@ function ProfilMissionStats() {
 
 				<div className="activityStats">
 					<h2>Activity</h2>
+					<hr></hr>
 					<div className="activityStatsDiv">
-						<span className="activity-li">Captured alive:</span>
+						<span className="activity-span">Captured alive:</span>
 						<p>{bounty.alive}</p>
 					</div>
 					<div className="activityStatsDiv">
-						<span className="activity-li">Eliminated:</span>
+						<span className="activity-span">Eliminated:</span>
 						<p>{bounty.eliminated}</p>
 					</div>
 					<div className="activityStatsDiv">
@@ -71,6 +75,7 @@ function ProfilMissionStats() {
 
 				<div className="typeMissions">
 					<h2>Mission Types</h2>
+					<hr></hr>
 					<div>
 						{missions.map((m, i) => (
 							<div className="missionTypeDiv" key={i}>
