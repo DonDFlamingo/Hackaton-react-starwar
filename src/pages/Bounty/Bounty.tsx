@@ -43,7 +43,7 @@ const Bounty = () => {
     const newDecisions = [...decisions, { character, accepted }];
     setDecisions(newDecisions);
 
-    if (currentIndex + 1 >= characters.length) {
+    if (currentIndex + 1 >= filteredCharacters.length) {
       const accepted = newDecisions
         .filter((d) => d.accepted)
         .map((d) => d.character);
@@ -62,7 +62,7 @@ const Bounty = () => {
         <div className="corner top-right" />
         <div className="corner bottom-left" />
         <div className="corner bottom-right" />
-        <h1>Je suis dans la page Bounty Hunters</h1>
+        <h1>Welcome dear hunter, choose your next Bounties</h1>
         <Carousel
           cards={filteredCharacters}
           onDecision={handleDecision}
