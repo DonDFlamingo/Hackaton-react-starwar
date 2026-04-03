@@ -3,6 +3,7 @@
 
 .DescriptifDuProfil {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8em;
@@ -10,14 +11,105 @@
     color: white;
 }
 
+.avatarAndName {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    gap: 1em;
+}
+
+hr {
+    width: 60%;
+    box-shadow:
+        0 0 5px #e63946,
+        0 0 10px #e63946,
+        0 0 20px #e63946,
+        0 0 40px #e63946;
+    margin: 1em auto;
+    height: 1px;
+}
+
 .Competences {
+     display: flex;
+    flex-direction: column;
+    background-color:hsla(202, 100%, 8%, 0.5) ;
+    gap: 8px;
+    border: 2px solid #2eb5e0;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #2eb6e085,
+        0 0 10px #2eb6e085,
+        0 0 20px #2eb6e085,
+        0 0 40px #2eb6e085
+}
+
+
+
+.divTexteProfil {
+ display: flex;
+    text-align: start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 90px;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 550;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    text-shadow:
+    0 0 5px #E63946,
+    0 0 10px #E63946,
+    0 0 20px #E63946,
+    0 0 40px #E63946
+}
+
+.profilName {
+    font-size: 5em;
+    font-weight: 550;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    text-shadow:
+    0 0 5px #2eb5e0,
+    0 0 10px #2eb5e0,
+    0 0 20px #2eb5e0,
+    0 0 40px #2eb5e0;
+}
+
+
+.titreCompetences {
+    font-size: 2.5em;
+    font-weight: 550;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.paraCompetences {
+    font-size: 1.75em;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    padding: 1em;
+}
+
+.photoProfilPourMercenaire {
+    border-radius: 100%;
+    width: 20em;
+    height: 20em;
+}
+
+/* .Competences {
      display: grid;
     grid-template-columns: repeat(3, 50vh);
     grid-template-rows: repeat(3, 1fr);
     background-color:#001b2b ;
     gap: 8px;
     border: 2px solid #2eb5e0;
-    height: 50vh;
+    width: 75%;
     border-radius: 10px;
 }
 
@@ -70,20 +162,23 @@
 }
 
 .titreCompetences {
-    font-size: 45px;
+    font-size: 3em;
     font-weight: 550;
     text-align: center;
-    padding-bottom: 1em;
     font-family: "Space Grotesk", sans-serif;
 }
 
 .paraCompetences {
-    font-size: 35px;
+    font-size: 2em;
     text-align: center;
     font-family: "Manrope", sans-serif;
+    padding: 1em;
 }
 
 .photoProfilPourMercenaire {
-    width: 30vh;
     border-radius: 100%;
-}
+    width: 20em;
+    height: 20em;
+    position: relative;
+    right: 35em;
+} */
