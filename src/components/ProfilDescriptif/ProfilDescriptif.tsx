@@ -4,43 +4,42 @@ import Abdou from '../../assets/abdou.png'
 
 function ProfilDescriptif() {
     return <>
-    <h1>Hello from Profil</h1>
     <   div className='DescriptifDuProfil'>
-            <img src={Abdou} alt="PhotoProfilMercenaire" className='PhotoProfilPourMercenaire' />
-            <div className='Compétance'>
+            <img src={Abdou} alt="PhotoProfilMercenaire" className='photoProfilPourMercenaire' />
+            <div className='Competences'>
 
                 <div className='div1'>
                     <h2 >DOSSIER </h2>
                 </div>
 
                 <div className='div2'>
-                    <p className='titreCompétance'>Nom de code </p> 
-                    <p className='paraCompétance'> Abdou Ba Fett </p>
+                    <p className='titreCompetences'>Name</p> 
+                    <p className='paraCompetences'> Abdou Ba Fett </p>
                 </div>
                 
                 <div className='div3'>
-                    <p className='titreCompétance'>Taille </p>
-                    <p className='paraCompétance'>1.83m</p>
+                    <p className='titreCompetences'>Height</p>
+                    <p className='paraCompetences'>1.83m</p>
                 </div>           
 
                 <div className='div4'>
-                    <p className='titreCompétance'>Genre  </p>
-                    <p className='paraCompétance'> Homme.</p>
+                    <p className='titreCompetences'>Gender</p>
+                    <p className='paraCompetences'> Male.</p>
                 </div>
 
                 <div className='div5'>
-                    <p className='titreCompétance'>Homeworld  </p>
-                    <p className='paraCompétance'> Kamino.</p>
+                    <p className='titreCompetences'>Homeworld  </p>
+                    <p className='paraCompetences'> Kamino.</p>
                 </div>
 
                 <div className='div6'>
-                    <p className='titreCompétance'>SkinColor  </p>
-                    <p className='paraCompétance'> Tan.</p>
+                    <p className='titreCompetences'>SkinColor  </p>
+                    <p className='paraCompetences'> Tan.</p>
                 </div>
 
                 <div className='div7'>
-                    <p className='titreCompétance'>Species </p>
-                    <p className='paraCompétance'>Human</p>
+                    <p className='titreCompetences'>Species </p>
+                    <p className='paraCompetences'>Human</p>
                 </div>
             </div>
         </div>

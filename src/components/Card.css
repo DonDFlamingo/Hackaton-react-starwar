@@ -5,7 +5,7 @@
 	--neutral: #0a0c10;
 	--background: #001b2b;
 	--PrimaryFont: "Manrope", serif;
-	--secondaryFont: "SpaceGotesk", serif;
+	--secondaryFont: "Space Grotesk", serif;
 }
 * {
 	margin: 0;
@@ -13,26 +13,110 @@
 	box-sizing: border-box;
 }
 html {
+	background-color: #0a0c10;
 }
 .card-section {
 	display: flex;
 	justify-content: center;
-	.card-container {
-		display: flex;
-		padding: 32px;
-		margin: 32px;
-		border: 1px solid #001b2b;
-		width: max-content;
-		border-radius: 20px;
-		.container-img-info {
-			display: flex;
-			flex-direction: column;
-			gap: 16px;
-			.card-div-img {
-				img {
-					width: 200px;
-				}
-			}
-		}
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.card-container.sith {
+	display: flex;
+	padding: 24px;
+
+	background-color: #0a0c10;
+	border: 1px solid #001b2b;
+
+	border-radius: 20px;
+	position: relative;
+	color: azure;
+}
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+.card-container.sith::after,
+.card-container.sith::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: conic-gradient(from var(--angle), transparent, red);
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: -1;
+	padding: 5px;
+	border-radius: 20px;
+	animation: 5s spin linear infinite;
+}
+.card-container.sith::before {
+	filter: blur(1.5rem);
+	opacity: 0.5;
+}
+.card-container.jedi {
+	display: flex;
+	padding: 24px;
+
+	background-color: #0a0c10;
+	border: 1px solid #001b2b;
+
+	border-radius: 20px;
+	position: relative;
+	color: azure;
+}
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+.card-container.jedi::after,
+.card-container.jedi::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: conic-gradient(from var(--angle), transparent, #2eb5e0);
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: -1;
+	padding: 5px;
+	border-radius: 20px;
+	animation: 5s spin linear infinite;
+}
+.card-container.jedi::before {
+	filter: blur(1.5rem);
+	opacity: 0.5;
+}
+.container-img-info {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	h2 {
+		font-size: 24px;
+		font-weight: 700;
+		font-family: var(--secondaryFont);
+	}
+	p {
+		font-family: var(--secondaryFont);
+	}
+}
+.card-div-img {
+	img {
+		width: 300px;
+		border-radius: 10px;
+	}
+}
+
+@keyframes spin {
+	from {
+		--angle: 0deg;
+	}
+	to {
+		--angle: 360deg;
 	}
 }

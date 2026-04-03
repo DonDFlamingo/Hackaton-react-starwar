@@ -1,11 +1,11 @@
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import Home from './pages/Home/Home.tsx';
-import Bounty from './pages/Bounty/Bounty.tsx'
+import Bounty from "./pages/Bounty/Bounty.tsx";
 import Mission from "./pages/Mission/Mission.tsx";
 import Profil from "./pages/Profil/Profil.tsx";
-import './index.css'
-import App from './App.tsx'
+import "./index.css";
+import App from "./App.tsx";
+import Home from "./pages/Home/Home.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,25 +17,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/mission",
-        element: <Mission />
+        element: <Mission />,
       },
       {
-        path:"/bounty",
-        element: <Bounty/>
+        path: "/bounty",
+        element: <Bounty />,
       },
       {
-        path:"/profil",
-        element: <Profil />
-      }
-      
+        path: "/profil",
+        element: <Profil />,
+      },
     ],
   },
 ]);
 
-// rendering
-
 const rootElement = document.getElementById("root");
 
 if (rootElement != null) {
-	createRoot(rootElement).render(<RouterProvider router={router} />);
+  createRoot(rootElement).render(<RouterProvider router={router} />);
 }
