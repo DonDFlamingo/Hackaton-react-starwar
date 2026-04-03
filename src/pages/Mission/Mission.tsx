@@ -55,7 +55,7 @@ const Mission = () => {
 	return (
 		<div className="mission-page">
 			<h1 className="mission-title">YOUR MISSIONS</h1>
-			<button className="btn-reset" onClick={handleReset}>
+			<button type="button" className="btn-reset" onClick={handleReset}>
 				RESET
 			</button>
 			<div className="mission-columns">
@@ -67,6 +67,7 @@ const Mission = () => {
 								<div className="card-btn-wrapper">
 									<Card character={character} />
 									<button
+										type="button"
 										className="btn-complete"
 										onClick={() => handleComplete(character)}
 									>
