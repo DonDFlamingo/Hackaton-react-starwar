@@ -3,7 +3,7 @@ import Abdou from '../../assets/abdou.png'
 
 
 function ProfilDescriptif() {
-    return <>
+    return <section className='profilDescriptifGlobal'>
         <div className='DescriptifDuProfil'>
             <div className='avatarAndName'>
                 <img src={Abdou} alt="PhotoProfilMercenaire" className='photoProfilPourMercenaire' />
@@ -40,7 +40,7 @@ function ProfilDescriptif() {
                 </div>
             </div>
         </div>
-    </> 
+    </section> 
 }
 
 export default ProfilDescriptif;

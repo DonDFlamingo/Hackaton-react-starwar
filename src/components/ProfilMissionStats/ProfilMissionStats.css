@@ -32,7 +32,7 @@ h3 {
 		0 0 20px #2eb6e085,
 		0 0 40px #2eb6e085;
 	width: 75%;
-	border-radius: 15px;
+	border-radius: 0px 0px 10px 10px;
 }
 .missionStats {
 	display: flex;
