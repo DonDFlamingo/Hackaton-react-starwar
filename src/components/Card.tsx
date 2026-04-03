@@ -1,30 +1,17 @@
-import { useState } from "react";
-import { useLocation } from "react-router";
 import "./Card.css";
 
-interface Character {
-	name: string;
-	affiliations: string[];
-	image?: string;
-	description?: string;
-	height: number;
-	mass: number;
-}
+type CharacterProps = {
+	character: {
+		name: string;
+		affiliations: string[];
+		image?: string;
+		description?: string;
+		height: number;
+		mass: number;
+	};
+};
 
-function Card() {
-	const location = useLocation();
-	const characters = (location.state as Character[]) || [];
-
-	// choisir UNE fois un personnage aléatoire
-	const [character] = useState(() => {
-		if (!characters.length) return null;
-		const randomIndex = Math.floor(Math.random() * characters.length);
-		return characters[randomIndex];
-	});
-
-	if (!character) {
-		return <p>No character found.</p>;
-	}
+function Card({ character }: CharacterProps) {
 	const affiliationClass = character.affiliations.includes("Sith")
 		? "sith"
 		: character.affiliations.includes("Jedi Order")
