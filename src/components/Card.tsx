@@ -44,7 +44,7 @@ function Card({ character }: CharacterProps) {
 				</div>
 				<hr />
 				<div className={`card-div-description ${affiliationClass}`}>
-					<h3>DESCRIPTION :</h3>
+					<h3>DESCRIPTION </h3>
 					<p>{character.height} m </p>
 					<p>{character.mass} kg</p>
 					<p>{character.eyeColor?.toUpperCase()}</p>
