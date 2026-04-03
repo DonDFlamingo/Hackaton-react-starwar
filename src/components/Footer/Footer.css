@@ -1,8 +1,13 @@
-.footer{
-     background-color: rgba(0, 0, 0, 0.822) ;
-     padding: 20px;
-     text-align: center;
+:root {
+	--secondaryFont: "Space Grotesk", serif;
 }
-.footer-p{
-    color:rgba(255, 255, 255, 0.799) ;
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.822);
+	padding: 20px;
+	text-align: center;
+}
+.footer-p {
+	color: rgba(255, 255, 255, 0.799);
+	font-family: var(--secondaryFont);
 }
