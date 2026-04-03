@@ -1,29 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Lexend:wght@100..900&family=Limelight&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap");
 
-.DescriptifDuProfil {
-<<<<<<< HEAD
+
+.profilDescriptifGlobal {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 8em;
-    padding-top: 5em;
-    color: white;
-=======
+}
+.DescriptifDuProfil {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 8em;
-	padding-top: 5em;
+    width: 75%;
+	padding-top: 2em;
 	color: white;
->>>>>>> 218c193d3d41fad6523c52634f4a7d619a0c7993
 }
 
 .avatarAndName {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 75%;
+    width: 30%;
     gap: 1em;
 }
 
@@ -39,14 +34,13 @@ hr {
 }
 
 .Competences {
-<<<<<<< HEAD
      display: flex;
     flex-direction: column;
     background-color:hsla(202, 100%, 8%, 0.5) ;
-    gap: 8px;
-    border: 2px solid #2eb5e0;
-    width: 75%;
-    border-radius: 10px;
+    gap: 4.5px;
+    width: 70%;
+    border: 2px solid #2eb6e085;
+    border-radius: 10px 10px 0 0px;
     box-shadow:
         0 0 5px #2eb6e085,
         0 0 10px #2eb6e085,
@@ -67,7 +61,7 @@ hr {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 550;
     text-align: center;
     font-family: "Space Grotesk", sans-serif;
@@ -79,7 +73,7 @@ h1 {
 }
 
 .profilName {
-    font-size: 5em;
+    font-size: 2em;
     font-weight: 550;
     text-align: center;
     font-family: "Space Grotesk", sans-serif;
@@ -92,132 +86,22 @@ h1 {
 
 
 .titreCompetences {
-    font-size: 2.5em;
-    font-weight: 550;
-    text-align: center;
-    font-family: "Space Grotesk", sans-serif;
-}
-
-.paraCompetences {
-    font-size: 1.75em;
-    text-align: center;
-    font-family: "Manrope", sans-serif;
-    padding: 1em;
-}
-
-.photoProfilPourMercenaire {
-    border-radius: 100%;
-    width: 20em;
-    height: 20em;
-}
-
-/* .Competences {
-     display: grid;
-    grid-template-columns: repeat(3, 50vh);
-    grid-template-rows: repeat(3, 1fr);
-    background-color:#001b2b ;
-    gap: 8px;
-    border: 2px solid #2eb5e0;
-    width: 75%;
-    border-radius: 10px;
-=======
-	display: grid;
-	grid-template-columns: repeat(3, 50vh);
-	grid-template-rows: repeat(3, 1fr);
-	background-color: #001b2b;
-	gap: 8px;
-	border: 2px solid #2eb5e0;
-	height: 50vh;
-	border-radius: 10px;
->>>>>>> 218c193d3d41fad6523c52634f4a7d619a0c7993
-}
-
-.div1 {
-	grid-column: span 3 / span 3;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 35px;
-}
-
-.div2 {
-	grid-row-start: 2;
-	border-radius: 20px;
-	align-content: center;
-}
-
-.div3 {
-	grid-column-start: 1;
-	grid-row-start: 3;
-	border-radius: 20px;
-	align-content: center;
-}
-
-.div4 {
-	grid-column-start: 2;
-	grid-row-start: 2;
-	border-radius: 20px;
-	align-content: center;
-}
-
-.div5 {
-	grid-column-start: 2;
-	grid-row-start: 3;
-	border-radius: 20px;
-	align-content: center;
-}
-
-.div6 {
-	grid-column-start: 3;
-	grid-row-start: 2;
-	border-radius: 20px;
-	align-content: center;
-}
-
-.div7 {
-	grid-row-start: 3;
-	border-radius: 20px;
-	align-content: center;
-}
-
-.titreCompetences {
-<<<<<<< HEAD
-    font-size: 3em;
-    font-weight: 550;
-    text-align: center;
-    font-family: "Space Grotesk", sans-serif;
-}
-
-.paraCompetences {
     font-size: 2em;
+    font-weight: 550;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.paraCompetences {
+    font-size: 1.5em;
     text-align: center;
     font-family: "Manrope", sans-serif;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .photoProfilPourMercenaire {
     border-radius: 100%;
-    width: 20em;
-    height: 20em;
-    position: relative;
-    right: 35em;
-} */
-=======
-	font-size: 45px;
-	font-weight: 550;
-	text-align: center;
-	padding-bottom: 1em;
-	font-family: "Space Grotesk", sans-serif;
+    width: 10em;
+    height: 10em;
 }
 
-.paraCompetences {
-	font-size: 35px;
-	text-align: center;
-	font-family: "Manrope", sans-serif;
-}
-
-.photoProfilPourMercenaire {
-	width: 30vh;
-	border-radius: 100%;
-}
->>>>>>> 218c193d3d41fad6523c52634f4a7d619a0c7993
