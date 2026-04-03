@@ -20,6 +20,7 @@
 	width: 30%;
 	gap: 1em;
 	border: #2eb6e085 solid 2px;
+	background-color: hsla(202, 100%, 8%, 0.5);
 	box-shadow:
 		0 0 5px #2eb6e085,
 		0 0 10px #2eb6e085,
