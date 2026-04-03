@@ -8,33 +8,31 @@ import App from "./App.tsx";
 import Home from "./pages/Home/Home.tsx";
 
 const router = createBrowserRouter([
-	{
-		element: <App />,
-		children: [
-			{
-				path: "/",
-				element: <Home />,
-			},
-			{
-				path: "/mission",
-				element: <Mission />,
-			},
-			{
-				path: "/bounty",
-				element: <Bounty />,
-			},
-			{
-				path: "/profil",
-				element: <Profil />,
-			},
-		],
-	},
+  {
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/mission",
+        element: <Mission />,
+      },
+      {
+        path: "/bounty",
+        element: <Bounty />,
+      },
+      {
+        path: "/profil",
+        element: <Profil />,
+      },
+    ],
+  },
 ]);
-
-// rendering
 
 const rootElement = document.getElementById("root");
 
 if (rootElement != null) {
-	createRoot(rootElement).render(<RouterProvider router={router} />);
+  createRoot(rootElement).render(<RouterProvider router={router} />);
 }
