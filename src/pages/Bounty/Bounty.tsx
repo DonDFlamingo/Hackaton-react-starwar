@@ -43,7 +43,7 @@ const Bounty = () => {
     const newDecisions = [...decisions, { character, accepted }];
     setDecisions(newDecisions);
 
-    if (currentIndex + 1 >= characters.length) {
+    if (currentIndex + 1 >= filteredCharacters.length) {
       const accepted = newDecisions
         .filter((d) => d.accepted)
         .map((d) => d.character);
