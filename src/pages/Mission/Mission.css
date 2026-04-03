@@ -117,7 +117,7 @@
 
 .btn-complete {
 	position: absolute;
-	top: ;
+	top: 99%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-family: "Space Grotesk", sans-serif;
