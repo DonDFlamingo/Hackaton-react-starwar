@@ -1,5 +1,6 @@
-import "./Carousel.css";
+import { useState } from "react";
 import Card from "../../components/Card";
+import "./Carousel.css";
 
 interface Character {
 	name: string;
@@ -17,6 +18,8 @@ interface CarouselProps {
 }
 
 const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
+	const [refreshKey, setRefreshKey] = useState(0);
+
 	if (currentIndex >= cards.length) {
 		return (
 			<div className="carousel-end">
@@ -25,13 +28,17 @@ const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
 		);
 	}
 
+	const handleReload = () => {
+		setRefreshKey((prev) => prev + 1);
+	};
+
 	const currentCard = cards[currentIndex];
 
 	return (
 		<div className="carousel">
 			<div className="carousel-card-wrapper">
 				<div className="carousel-card">
-					<Card character={currentCard} />
+					<Card character={currentCard} key={refreshKey} />
 				</div>
 			</div>
 			<div className="carousel-actions">
@@ -39,7 +46,10 @@ const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
 					<button
 						type="button"
 						className="btn-refuse"
-						onClick={() => onDecision(currentCard, false)}
+						onClick={() => {
+							onDecision(currentCard, false);
+							handleReload();
+						}}
 					>
 						✕
 					</button>
@@ -49,7 +59,10 @@ const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
 					<button
 						type="button"
 						className="btn-accept"
-						onClick={() => onDecision(currentCard, true)}
+						onClick={() => {
+							onDecision(currentCard, true);
+							handleReload();
+						}}
 					>
 						✓
 					</button>
