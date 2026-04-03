@@ -26,31 +26,31 @@ function ProfilMissionStats() {
 		<div className="missionsStatsGlobal">
 			<div className="statsWrapper">
 				<div className="missionStats">
-					<h2>Mission Statistics</h2>
-					<hr></hr>
+					<h2 className="titleH2">Mission Statistics</h2>
+					<hr className="titleHR"></hr>
 					<div className="missionDiv">
-						<h3>Missions</h3>
+						<h3 className="titleH3">Missions</h3>
 						<p>{stats.total}</p>
 					</div>
 					<div className="missionDiv">
-						<h3>Successes</h3>
+						<h3 className="titleH3">Successes</h3>
 						<p>{stats.success}</p>
 					</div>
 
 					<div className="missionDiv">
-						<h3>Failures</h3>
+						<h3 className="titleH3">Failures</h3>
 						<p>{stats.failure}</p>
 					</div>
 
 					<div className="missionDiv">
-						<h3>Rate</h3>
+						<h3 className="titleH3">Rate</h3>
 						<p>{stats.successRate}</p>
 					</div>
 				</div>
 
 				<div className="activityStats">
-					<h2>Activity</h2>
-					<hr></hr>
+					<h2 className="titleH2">Activity</h2>
+					<hr className="titleHR"></hr>
 					<div className="activityStatsDiv">
 						<span className="activity-span">Captured alive:</span>
 						<p>{bounty.alive}</p>
@@ -74,8 +74,8 @@ function ProfilMissionStats() {
 				</div>
 
 				<div className="typeMissions">
-					<h2>Mission Types</h2>
-					<hr></hr>
+					<h2 className="titleH2">Mission Types</h2>
+					<hr className="titleHR"></hr>
 					<div>
 						{missions.map((m, i) => (
 							<div className="missionTypeDiv" key={i}>
