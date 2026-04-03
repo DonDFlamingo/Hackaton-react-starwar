@@ -1,17 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Lexend:wght@100..900&family=Limelight&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+
 .DescriptifDuProfil {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8em;
+    padding-top: 5em;
+    color: white;
 }
 
-.Compétance {
+.Competences {
      display: grid;
     grid-template-columns: repeat(3, 50vh);
     grid-template-rows: repeat(3, 1fr);
+    background-color:#001b2b ;
     gap: 8px;
-    background-color: #0A0C10;
+    border: 2px solid #2eb5e0;
     height: 50vh;
     border-radius: 10px;
 }
@@ -20,53 +25,65 @@
     grid-column: span 3 / span 3;
     display: flex;
     align-items: center;
-    justify-content: center;text-decoration: underline;
+    justify-content: center;
+    font-size: 35px;
 }
 
 .div2 {
     grid-row-start: 2;
     border-radius: 20px;
-    
+    align-content: center;
 }
 
 .div3 {
     grid-column-start: 1;
     grid-row-start: 3;
+    border-radius: 20px;
+     align-content: center;
 }
 
 .div4 {
     grid-column-start: 2;
     grid-row-start: 2;
+    border-radius: 20px;
+     align-content: center;
 }
 
 .div5 {
     grid-column-start: 2;
     grid-row-start: 3;
+    border-radius: 20px;
+     align-content: center;
 }
 
 .div6 {
     grid-column-start: 3;
     grid-row-start: 2;
+    border-radius: 20px;
+     align-content: center;
 }
 
 .div7 {
     grid-row-start: 3;
+    border-radius: 20px;
+     align-content: center;
 }
 
-.titreCompétance {
-    font-size: 30px;
+.titreCompetences {
+    font-size: 45px;
     font-weight: 550;
     text-align: center;
-    text-decoration: underline;
-    color: #E63946;
+    padding-bottom: 1em;
+    font-family: "Space Grotesk", sans-serif;
 }
 
-.paraCompétance {
-    font-size: 20px;
+.paraCompetences {
+    font-size: 35px;
     text-align: center;
+    font-family: "Manrope", sans-serif;
 }
 
-.PhotoProfilPourMercenaire {
+.photoProfilPourMercenaire {
     width: 30vh;
     border-radius: 100%;
 }
