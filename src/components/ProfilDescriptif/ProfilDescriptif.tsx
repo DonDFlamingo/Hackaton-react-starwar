@@ -3,47 +3,44 @@ import Abdou from '../../assets/abdou.png'
 
 
 function ProfilDescriptif() {
-    return <>
-    <   div className='DescriptifDuProfil'>
-            <img src={Abdou} alt="PhotoProfilMercenaire" className='photoProfilPourMercenaire' />
+    return <section className='profilDescriptifGlobal'>
+        <div className='DescriptifDuProfil'>
+            <div className='avatarAndName'>
+                <img src={Abdou} alt="PhotoProfilMercenaire" className='photoProfilPourMercenaire' />
+                <p className='profilName'>Abdou Ba Fett</p>
+            </div>
             <div className='Competences'>
 
-                <div className='div1'>
-                    <h2 >DOSSIER </h2>
-                </div>
-
-                <div className='div2'>
-                    <p className='titreCompetences'>Name</p> 
-                    <p className='paraCompetences'> Abdou Ba Fett </p>
-                </div>
                 
-                <div className='div3'>
+                    <h1 >Information </h1>
+                        <hr></hr>
+                <div className='divTexteProfil'>
                     <p className='titreCompetences'>Height</p>
                     <p className='paraCompetences'>1.83m</p>
                 </div>           
 
-                <div className='div4'>
+                <div className='divTexteProfil'>
                     <p className='titreCompetences'>Gender</p>
                     <p className='paraCompetences'> Male.</p>
                 </div>
 
-                <div className='div5'>
+                <div className='divTexteProfil'>
                     <p className='titreCompetences'>Homeworld  </p>
                     <p className='paraCompetences'> Kamino.</p>
                 </div>
 
-                <div className='div6'>
+                <div className='divTexteProfil'>
                     <p className='titreCompetences'>SkinColor  </p>
                     <p className='paraCompetences'> Tan.</p>
                 </div>
 
-                <div className='div7'>
+                <div className='divTexteProfil'>
                     <p className='titreCompetences'>Species </p>
                     <p className='paraCompetences'>Human</p>
                 </div>
             </div>
         </div>
-    </> 
+    </section> 
 }
 
 export default ProfilDescriptif;
