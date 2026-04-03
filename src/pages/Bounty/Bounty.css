@@ -14,11 +14,15 @@
 }
 
 .bounty-page.light-side {
-	background-image: url("https://img.freepik.com/photos-gratuite/fond-hyperespace-3d-effet-tunnel-chaine_1048-12526.jpg?semt=ais_hybrid&w=740&q=80");
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.367)),
+		url("https://img.freepik.com/photos-gratuite/fond-hyperespace-3d-effet-tunnel-chaine_1048-12526.jpg?semt=ais_hybrid&w=740&q=80");
 }
 
 .bounty-page.dark-side {
-	background-image: url("https://img.freepik.com/photos-gratuite/fond-hyperespace-3d-effet-tunnel-chaine_1048-12526.jpg?semt=ais_hybrid&w=740&q=80");
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.367)),
+		url("https://img.freepik.com/photos-gratuite/fond-hyperespace-3d-effet-tunnel-chaine_1048-12526.jpg?semt=ais_hybrid&w=740&q=80");
 }
 
 .bounty-page-h1.dark-side {
