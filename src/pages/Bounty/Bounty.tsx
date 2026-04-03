@@ -62,7 +62,7 @@ const Bounty = () => {
         <div className="corner top-right" />
         <div className="corner bottom-left" />
         <div className="corner bottom-right" />
-        <h1>Je suis dans la page Bounty Hunters</h1>
+        <h1>Welcome dear hunter, choose your next Bounties</h1>
         <Carousel
           cards={filteredCharacters}
           onDecision={handleDecision}

@@ -54,13 +54,13 @@ const Mission = () => {
 
   return (
     <div className="mission-page">
-      <h1 className="mission-title">VOS MISSIONS</h1>
+      <h1 className="mission-title">YOUR MISSIONS</h1>
       <button className="btn-reset" onClick={handleReset}>
-        Réinitialiser
+        RESET
       </button>
       <div className="mission-columns">
         <div className="mission-column">
-          <h2 className="column-title active">En cours</h2>
+          <h2 className="column-title active">In progress</h2>
           <div className="mission-list">
             {active.map((character) => (
               <div key={character.name} className="mission-card-wrapper">
@@ -70,7 +70,7 @@ const Mission = () => {
                     className="btn-complete"
                     onClick={() => handleComplete(character)}
                   >
-                    Mission accomplie
+                    Missions completed
                   </button>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Mission = () => {
         <div className="mission-divider" />
 
         <div className="mission-column">
-          <h2 className="column-title completed">Accomplies</h2>
+          <h2 className="column-title completed">Completed</h2>
           <div className="mission-list">
             {completed.map((character) => (
               <div
