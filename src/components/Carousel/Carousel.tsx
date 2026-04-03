@@ -1,31 +1,59 @@
-import { useState } from "react";
-
 import "./Carousel.css";
+import Card from "../../components/Card";
 
-const placeholders = ["Card 1", "Card 2", "Card 3", "Card 4", "Card 5"];
+interface Character {
+  name: string;
+  affiliations: string[];
+  image?: string;
+  description?: string;
+  height: number;
+  mass: number;
+}
 
-const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+interface CarouselProps {
+  cards: Character[];
+  onDecision: (card: Character, accepted: boolean) => void;
+  currentIndex: number;
+}
 
-  const prev = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? placeholders.length - 1 : prev - 1,
+const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
+  if (currentIndex >= cards.length) {
+    return (
+      <div className="carousel-end">
+        <h2>Tous les contrats ont été examinés.</h2>
+      </div>
     );
-  };
+  }
 
-  const next = () => {
-    setCurrentIndex((prev) =>
-      prev === placeholders.length - 1 ? 0 : prev + 1,
-    );
-  };
+  const currentCard = cards[currentIndex];
 
   return (
     <div className="carousel">
-      <button onClick={prev}>←</button>
-      <div className="carousel-track">
-        <div className="carousel-card">{placeholders[currentIndex]}</div>
+      <div className="carousel-card-wrapper">
+        <div className="carousel-card">
+          <Card character={currentCard} />
+        </div>
       </div>
-      <button onClick={next}>→</button>
+      <div className="carousel-actions">
+        <div className="btn-wrapper">
+          <button
+            className="btn-refuse"
+            onClick={() => onDecision(currentCard, false)}
+          >
+            ✕
+          </button>
+          <span className="btn-label">Skip</span>
+        </div>
+        <div className="btn-wrapper">
+          <button
+            className="btn-accept"
+            onClick={() => onDecision(currentCard, true)}
+          >
+            ✓
+          </button>
+          <span className="btn-label">Accept</span>
+        </div>
+      </div>
     </div>
   );
 };
