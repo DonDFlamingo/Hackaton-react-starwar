@@ -37,6 +37,7 @@ const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
 			<div className="carousel-actions">
 				<div className="btn-wrapper">
 					<button
+						type="button"
 						className="btn-refuse"
 						onClick={() => onDecision(currentCard, false)}
 					>
@@ -46,6 +47,7 @@ const Carousel = ({ cards, onDecision, currentIndex }: CarouselProps) => {
 				</div>
 				<div className="btn-wrapper">
 					<button
+						type="button"
 						className="btn-accept"
 						onClick={() => onDecision(currentCard, true)}
 					>
