@@ -1,7 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-}
 h2 {
 	padding: 0.5rem 0 0.5rem 0;
 	text-align: center;
@@ -12,16 +8,16 @@ h3 {
 	color: #2eb5e0;
 }
 .missionsStatsGlobal {
-	display: grid;
+	display: flex;
+	justify-content: center;
 }
 .statsWrapper {
 	background-color: #001b2b;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto auto;
-	border: #2eb5e0 solid 3px;
-	flex: 1;
-
+	border: #2eb5e0 solid 2px;
+	width: 75%;
 	border-radius: 15px;
 }
 .missionStats {
@@ -29,7 +25,9 @@ h3 {
 	flex-direction: column;
 	grid-row: 1 / 3;
 	color: #2eb5e0;
-	border-right: 3px solid #2eb5e0;
+	border-right: 2px solid #2eb5e0;
+	justify-content: space-evenly;
+	align-items: stretch;
 }
 .missionDiv {
 	display: flex;
@@ -39,11 +37,11 @@ h3 {
 	justify-content: space-between;
 }
 .missionDivGlobal {
-	border-top: 3px solid #2eb5e0;
+	border-top: 2px solid #2eb5e0;
 }
 .missionTypeDiv {
 	display: flex;
-	margin: 0 3em 0 0;
+	margin: 0 3em 0 1em;
 	justify-content: space-between;
 }
 .textMissionDiv {
@@ -56,7 +54,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	color: #2eb5e0;
-	padding: 1em;
+	padding: 0.5em;
 	grid-column: 2;
 	grid-row: 1;
 }
@@ -67,6 +65,11 @@ h3 {
 .typeMissions {
 	grid-column: 2;
 	grid-row: 2;
-	border-top: 3px solid #2eb5e0;
-	padding: 1em;
+	border-top: 2px solid #2eb5e0;
+	padding: 0.5em;
+}
+.activityStatsDiv {
+	display: flex;
+	margin: 0 3em 0 1em;
+	justify-content: space-between;
 }

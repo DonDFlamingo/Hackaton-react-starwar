@@ -16,50 +16,61 @@ function ProfilMissionStats() {
 	};
 
 	const missions = [
-		{ type: "Traque & capture", value: 54 },
-		{ type: "Assassinat", value: 21 },
-		{ type: "Renseignement", value: 15 },
-		{ type: "Escorte", value: 10 },
+		{ type: "Tracking & Capture", value: 54 },
+		{ type: "Assassination", value: 21 },
+		{ type: "Intelligence", value: 15 },
+		{ type: "Escort", value: 10 },
 	];
 
 	return (
 		<div className="missionsStatsGlobal">
 			<div className="statsWrapper">
 				<div className="missionStats">
-					<h2>Statistique de mission</h2>
+					<h2>Mission Statistics</h2>
 					<div className="missionDiv">
 						<h3>Missions</h3>
 						<p>{stats.total}</p>
 					</div>
 					<div className="missionDiv">
-						<h3>Succès</h3>
+						<h3>Successes</h3>
 						<p>{stats.success}</p>
 					</div>
 					<div className="missionDiv">
-						<h3>Échecs</h3>
+						<h3>Failures</h3>
 						<p>{stats.failure}</p>
 					</div>
 					<div className="missionDiv">
-						<h3>Taux</h3>
+						<h3>Rate</h3>
 						<p>{stats.successRate}</p>
 					</div>
 				</div>
 
 				<div className="activityStats">
-					<h2>Activité</h2>
-					<ul className="activity-ul">
-						<li className="activity-li">Capturés vivants : {bounty.alive}</li>
-						<li className="activity-li">Éliminés : {bounty.eliminated}</li>
-						<li className="activity-li">Échappés : {bounty.escaped}</li>
-						<li className="activity-li">
-							Plus grosse prime : {bounty.biggest}
-						</li>
-						<li className="activity-li">Gains : {bounty.earnings}</li>
-					</ul>
+					<h2>Activity</h2>
+					<div className="activityStatsDiv">
+						<span className="activity-li">Captured alive:</span>
+						<p>{bounty.alive}</p>
+					</div>
+					<div className="activityStatsDiv">
+						<span className="activity-li">Eliminated:</span>
+						<p>{bounty.eliminated}</p>
+					</div>
+					<div className="activityStatsDiv">
+						<span className="activity-span">Escaped:</span>
+						<p>{bounty.escaped}</p>
+					</div>
+					<div className="activityStatsDiv">
+						<span className="activity-span">Highest bounty:</span>
+						<p>{bounty.biggest}</p>
+					</div>
+					<div className="activityStatsDiv">
+						<span className="activity-span">Earnings:</span>
+						<p>{bounty.earnings}</p>
+					</div>
 				</div>
 
 				<div className="typeMissions">
-					<h2>Types de missions</h2>
+					<h2>Mission Types</h2>
 					<div>
 						{missions.map((m, i) => (
 							<div className="missionTypeDiv" key={i}>
